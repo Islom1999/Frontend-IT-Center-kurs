@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* section & aside ni orqa foni */
+.bg{
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+a:link{
+    color:blue;
+}
+a:hover{
+    color: red;
+}
+
+
+
+/* headerga kirivchi stillar */
+
+header{
+    background-color: rgb(131, 143, 243);
+    padding: 30px;
+    margin: 0px auto;
+    width: 100%;
+    height: 20%;
+}
+
+.logotip{
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+.logo{
+    width: 30px;
+    height: 30px; 
+
+    display: inline-block;
+    float: left;
+}
+
+.tatu{
+    font-size: 25px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menyu{
+    display: inline-block;
+    float: right;
+    line-height: 5px;
+    font-size: 20px;
+}
+
+.menyu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+}  
+
+/* sectionga kirivchi stillar */
+
+section{
+    padding: 30px 0px;
+    padding-left: 20px;
+    width: 90%;
+    margin: 0px auto;
+    border-radius: 50px;
+}
+
+.form1{
+    display: inline-block;
+    float: left;
+    width: 40%;
+    height: 50%;
+}
+
+.input-1{
+    width: 250px;
+}
+.input-2{
+    width: 525px;
+}
+textarea{
+    width: 525px;   
+}
+
+.form1 span {
+    font-weight: bold;
+}
+
+.form2{
+    display: inline-block;
+    float: right;
+    width: 60%;
+    height: 50%;
+    padding-top: 20px;
+}
+
+.form2_box{
+    margin-left: 20%;
+}
+
+.form2 input{
+    padding: 4px;
+    margin: 10px;
+}
+
+.form2 textarea{
+    padding: 4px;
+    margin: 10px;
+}
+
+.send{
+    padding: 10px;
+    margin: 10px;
+    margin-top: 5px;
+    background-color: rgb(67, 69, 192);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.send:hover{
+    background-color: blueviolet;
+}
+
+
+/* asidega kirivchi stillar */
+
+aside{
+    margin: 0px auto;
+    width: 100%;
+    height: 35%;
+    margin-top: 60px;
+}
+
+aside iframe{
+    width: 100%;
+    height: 600px;
+}
+
+
+/* footerga kirivchi stillar */
+
+footer{
+    background-color: rgb(31, 31, 48);
+    color: white;
+    width: 100%;
+    height: 20%;
+    margin: 0px auto;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 40px;
+}
+
+footer .container > div{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+li{
+    list-style: none;
+}
+
+
+.box1{
+    width: 30%;
+    margin-top: 50px;
+}
+
+.box2{
+    width: 30%;
+    padding-bottom: 50px;
+}
+
+.box3{
+    width: 10%;
+}
+
+.box4{
+    width: 10%;
+}
+
+.box5{
+    width: 10%;
+}
