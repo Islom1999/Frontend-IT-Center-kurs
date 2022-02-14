@@ -1,0 +1,193 @@
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.clr{
+    clear: both;
+}
+.text{
+    font-size: 24px;
+    color: #555;
+    line-height: 36px;
+}
+.text .bold{
+    font-weight: bold;
+    color: #000;
+}
+.btn{
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: 
+    #5AB963;
+    color: #fff;
+    margin-top: 20px;
+}
+.btn:hover{
+    background-color: 
+    #ff00c8;
+}
+header{
+    height: 500px;
+    background-image: url('../img/IMAGE.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    padding: 20px 0;
+}
+.navbar .brand{
+    float: left;
+}
+.navbar ul{
+    float: right;
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 10px;
+    
+}
+.navbar ul li a:hover{
+    border: 2px solid #fff;
+}
+.header-content{
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+}
+.header-content h1{
+    font-size: 60px;
+}
+.header-content p{
+    font-size: 18px;
+}
+
+
+section.section-one{
+    padding: 100px 0;
+}
+section.section-one .text{
+    width: 40%;
+    font-size: 24px;
+    color: #555;
+    display: inline-block;
+}
+section.section-one .text .bold{
+    font-weight: bold;
+    color: #000;
+    
+}
+section.section-one .parent{
+    width: 100%;
+}
+section.section-one .parent .box{
+    width: 25%;
+    display: inline-block;
+    float: left;
+    padding: 50px 40px;
+}
+
+.section-two{
+    width: 100%;
+}
+.section-two img{
+    width: 100%;
+}
+.section-three{
+    width: 100%;
+    padding: 50px 0;
+}
+.section-three .text{
+    width: 51%;
+    margin-left: 25%;
+    text-align: center;
+    font-size: 24px;
+    color: #555;
+    line-height: 36px;
+}
+.section-four{
+    width: 100%;
+    padding: 50px 0;
+}
+.section-four .parent{
+    width: 100%;
+}
+.section-four .parent .item-left{
+    width: 40%;
+    float: left;
+}
+.section-four .parent .item-left img{
+    width: 100%;
+}
+.section-four .parent .item-right{
+    width: 50%;
+    float: right;
+}
+.section-four .parent .item-right .text{
+    width: 60%;   
+}
+.section-four .parent .item-right .text-1{
+    width: 60%;
+    color: #555;
+    line-height: 24px;
+}
+.h1{
+    text-align: center;
+    margin-top: 70px;
+}
+.p{
+    text-align: center;
+}
+aside{
+    width: 100%;
+    padding: 50px 0;
+    margin-bottom: 200px;
+}
+aside .left{
+    width: 40%;
+    float: left;
+}
+aside .right{
+    width: 40%;
+    float: right;
+}
+aside .right .btn{
+    float: right;
+    margin-top: 80px;
+}
+footer{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #0A0E1A;
+    color: #fff;
+}
+footer .left{
+    width: 40%;
+    float: left;
+}
+footer .right{
+    width: 50%;
+    float: right;
+}
+footer .right .box1{
+    width: 20%;
+    float: left;
+}
+footer .right .box1 i{
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+

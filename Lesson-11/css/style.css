@@ -1,0 +1,116 @@
+nav.navbar{
+    padding: 25px 0;
+    height: 70px;
+}
+
+nav.navbar ul{
+    list-style: none;
+    color: #222222;
+}
+
+header.header{
+    min-height: 500px;
+    background-image: url('../img/bg.png');
+}
+.header.header .pr{
+    padding-right: 100px;
+    padding-top: 20px;
+}
+.header.header h1{
+    padding: 30px 0px;
+    font-size: 45px;
+    color: #fff;
+}
+.header.header p{
+    color: #fff;
+    font-size: 18px;
+}
+header.header img{
+    margin-top: 50px;
+    width: 100%;
+}
+
+header.logo{
+    background-color: #3E5C50;;
+    min-height: 100px;
+}
+header.logo img{
+    width: 100%;
+}
+
+section.one .col-6{
+    margin: 15px 0;
+}
+section.one .col-3{
+    margin: 30px 0;
+}
+
+section.two{
+    background-color: #DDE7ED;
+    min-height: 150px;
+}
+section.two .col-3{
+    padding: 0 15px;
+}
+section.two .card{
+    background-color: #fff;
+    padding: 0 15px;
+}
+section.two  span{
+    color: blue;
+} 
+section.two .card .color-3{
+    color: #C7C5C5;
+}
+
+section.three .col-12{
+    padding: 50px 250px;
+}
+section.three .col-12 h2{
+    margin: 30px 0;
+}
+section.three .col-12 .p{
+    margin: 20px 0;
+}
+
+.footer-logo{
+    min-height: 50px;
+    background-color: #A1BFD4;;
+}
+footer{
+    background-color: #2B2C2E;
+    min-height: 50px;
+    padding: 40px 0;
+}
+footer li{
+    color: #939596;
+    list-style: none;
+    padding: 5px 0;
+}
+footer h4{
+    font-size: 20px;
+    line-height: 24px;
+    color: #E4E8EB;
+    padding-bottom: 20px;
+}
+footer .list{
+    padding: 20px 0;
+}
+footer input{
+    margin-bottom: 20px;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+}
+footer i{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 15px;
+}
+footer .btn-footer{
+    background: #5F6166;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: -5px;
+}
