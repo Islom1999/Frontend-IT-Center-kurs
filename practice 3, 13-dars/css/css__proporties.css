@@ -1,0 +1,321 @@
+*{
+	color: red;
+	background-color: yellow;
+
+	font-size: 30px;
+	font-family: sans-serif;  /* shrift turi */
+	font-style: italic;  /**/
+	font-weight: bold;  /* bolder, normal */
+
+	text-indent: 50px;   /* abzas */
+	text-align: center; /* right, left, justify -ikki tarafini ham bir hil tekislash  */
+	
+	text-decoration: overline;  /* overline-tepasidan chizish; line-through-ustidan chizish; 
+								underline - tagidan chizish; none-agar oldindan chiziq bo'lsa uni ko'rsatmaydi*/
+	text-transform: uppercase; /* uppercase-katta harf; lowercase kichik harf;
+								 capitalize - harflarning katta kichikligi */
+
+	line-height: 10px; /* satr qatorlari qatorlar orasidagi masofa */
+	word-spacing: 10px;  /* so'zlar orasidagi masofa */
+	letter-spacing: 5px; /*harflar orasidagi masofa*/
+}
+
+/* css ulashlar 3-xil bo'ladi va ular kuchlilik darajasi bo'yicha quyidagicha:
+
+	1.inline - teg ichida style atributida yoziladi
+	2.internal - heading tegi ichida style tegi ichida yoziladi
+	3.external - alohida fayl ochilib html faylga ulanib yoziladi
+
+		external ulashda ham turlicha yozishlar bor ular ham quyidagicha kuchlilikka ega:
+
+		1.id - (id selekter) orqali style berish - #id{}
+		2.class - (class selekter) orqali style berish - .class{}
+		3.teg - (teg selekter) orqali style berish - teg{}
+		4.* orqali ulash ham bor unda body qismidagi 
+			hamma elementga tasir qiladi u teg selektrga ham kiradi - *{}
+
+*/
+
+
+
+
+
+/* Ota-ona class elementlari - bir teg ichiga kiruvchi elementlardir. misol uchun:
+		<p clsss="box">
+			<h1></h1>
+			<p></p>
+		</p>
+	ushbu kodda p class box tegi h1 va p teglari uchun ota-ona.
+
+	Merosxorlik - bola elementida qiymat olmagan xossalari ota elemantida bo'lsa 
+bola element o'sha xossalarni meros qilib oladi.
+*/
+
+*{
+	display: inline-block; /*inline,block*/
+	min-width: 300px;
+	max-height:800px;
+	min-height: 300px;
+	max-width: 800px;
+
+	border:2px;
+	border-style: solid;
+	border-color: red;
+	border: 2px solid red;
+
+	padding: 10px; 	/* element ichidagi masofa */
+	padding-top: 4px;
+	padding-right: 4px;
+	padding-bottom: 4px;
+	padding-left: 4px;
+
+	padding: 5px 10px 5px 10px;
+	padding: 5px 10px;
+
+	margin: 10px; 	/*elment tashqarisidagi masofa*/
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+
+	margin: 5px 10px 5px 10px;
+	margin: 5px 10px;
+
+	vertical-align: top; /* middle, bottom */
+	/* float: right;  	left */
+
+}
+
+
+
+/* psedoclass-elementni holatini aniqlash uchun ishlatiladi */
+
+	h1:hover{
+		color:red;  /* element ustiga borgandagi rang */
+	}
+
+	a:link{
+		color: red;	/* tashrif buyurilmagan linkni rangni o'zgartirish */
+	}
+
+	a:active{
+		color: blue; 	/* element ustiga bosib turilgandagi holatni belgilaydi */
+	}
+
+	a:visited{
+		color: black;	/* tashrif buyurgandan keyingi rangi */
+	}
+
+*{
+	background-image: url("");	/* orqa foniga rasmjoylashtirish */
+	background-repeat: none;	/* repeat-x; repeat-y */
+	background-size: auto;  	/* contain-sifati yo'qoladigan darajagacha yaqinlashadi
+								   cover-blockni to'liq qoplab oladi; */
+	background-position: x,y; 	/* left,center,right,top,bottom 
+								   va px da ham berish mumkin-rasmni joylashuvi*/
+	background-attachment: fixed;	/* scroll-avto qiymat; fixed-orqa fon rasmni qotirib beradi */
+
+	border-radius:50%;
+
+	border-top-left-radius:50%;
+	border-top-right-radius:40%;
+	border-bottom-right-radius:30%;
+	border-bottom-left-radius:20%;
+
+	border-radius: 50% 40% 30% 20%;
+
+	border-top: 2px;
+	border-right: 2px;
+	border-bottom: 2px;
+	border-left: 2px;
+
+	outline: 2px solid black;	/* tashqi chiziq, borderga o'xshash, none qiymati ham bor*/
+	/*solidni boshqa qiymatlari ham bor: dotter-nuqta, dashed-chiziq chiziq*/
+
+	opacity: 0.5;	/* fonning ko'rinish darajasi eng balanti 1ga teng*/
+
+	margin: 0px auto;	/* elementni o'rtaga joylashtirib beradi */
+
+	cursor: pointer;	/* element ustiga cursor kelgandagi holati
+							pointer-kursorimiz qo'lga aylanadi*/
+
+	/* transparent ota classdan qiymat olish bu qiymat */
+
+
+		/* qo'simcha malumot uchun xossa : */
+	list-style: none;	/* listni oldidagi tartibini yo'qotadi */
+	clear: both;		/* malumot sizib chiqib ketishini oldini oladi */
+	
+	/* &nbsp - bitta tab bo'sh joy qoldirib beradi bu html faylda yoziladi */
+}	
+
+
+
+*{
+	position: static; 	/* static - avto qiymati
+
+						   relative - o'zini oldingi joyini ham saqlab qoladi, relative absolyute bilan ham ishlatiladi ; 
+
+						   absolyute - o'zini oldingi joyini saqlab qolmaydi 
+
+						   fixed - displeyi avto inlayn-block bo'ladi va containerni qotirib qo'yadi ; 
+
+						   sticky - fixedga o'xshash farqi top da berilgan qiymat va joylashgan joyi ichida harakatlana oladi 
+						   agarda topning qiymati berilmasa ishlamaydi;
+						 */
+
+	top: 30vh;
+	left: 50%;
+	right: 200px;
+	z-index: 5;		/* ustma ust joylashtirish uchun ishlatiladi statickdan boshqa hamma qiymatlar bilam mos tushadi;  */
+}
+
+*{
+	text-shadow: 2px 2px 10px red;
+	/* text-shadow: x, y, tarqalishi, rangi; */
+
+	box-shadow: 2px 2px 10px 5px rgb(95, 61, 61, .5); ;
+	/* box-shadow: x, y, tarqalishi, qancha_masofaga_toliq_tarqalishi, rangi; */
+}
+
+
+
+
+*{
+				/* rang berish usullari */
+	/* rgb-usuli */
+	background-color: rgb(95, 61, 61); 		/* " RGB - red, green, blue " - har biriga 0 dan 255gacha bo'lgan 		
+										shaffoflik qiymati beriladi*/
+
+	/* rgba-usuli */
+	background-color: rgba(95, 61, 61, 0.5);  /* " RGBA - red, green, blue, alpha(opasity) " */
+
+
+	/* hex-usuli */
+	background-color: #ffaa33;				/* bunda red, green, blue ikkitadan qiymat oladi va u 16 lik sanoq 														sistemasida bo'ladi */
+
+	background-color: #fa3;		/* qisqartma usulda ham bersa bo'ldi unda har bir rangni ikkita qiymatlari ham bir hil 									bo'lsa, ( shu va yuqoridagi rang ham bir xil ) */
+
+	/* hsl-usuli */
+	background-color: hsl(0,100%,50%);		/* hsl(color, saturation, lightness); 
+												 hsl(rang, to'yinganlik, shaffoflik%);
+													to'yinganlik va shaffoflik fiozda beriladi;
+												 rang sonlarda beriladi:
+													red - 0...120
+													green - 120..240
+													blue - 240..360
+												*/
+	
+
+				/* linear-gradient */
+
+	background-image: linear-gradient( red, blue, green);
+	/* linear-gradient bizga ranglarni ulab beradi */
+
+	background-image: linear-gradient( to top, red, blue, green);
+	/* tepadan pastga qarab ulaydi */
+
+	background-image: linear-gradient( to top left, red, blue, green);
+	/* biz berganga teskari ulaydi, paski o'ng tarafdan ulaydi */
+
+	
+	background: repeating-linear-gradient(to left, red 10%, blue 20%);
+	/* liner gradientni takrorlab beradi */
+
+	background: radial-gradient( red 10%, blue 20%);
+	/* markazdan aylana bo'yicha qoshib beradi */
+
+	background: repeating-radial-gradient(circle at 100%, red 10px, blue 20px);
+	/* markazdan aylana bo'yicha takroran qo'shib beradi */
+
+	background: repeating-radial-gradient(closest-corner at 10% 30%, red 10px, blue 20px,green 24px);
+	/* at dan keyin x va y ga qiymat beriladi o'sha joydan boshlab aylana bo'yisha taktoran qo'shib beradi */
+
+
+			/* transition */
+
+	transition-property: background, color ;    /* transition-property: o'zgarishi kerak bolgan propertylar */
+	transition-duration: 0.5s;					/* ozgarish vaqti */
+	transition-delay: 1s;						/* kutish vaqti, ozroq kutib keyin o'zgaradi */
+
+	transition-timing-function: linear;			/* o'zgarish turi: liner, ease, ease-in, ease-out, ease-in-out */
+
+	transition-timing-function: cubic-bezier(1, 0, 0, 1);	/* bunda o'zgarish turi yasaladi */
+
+	transition: all 0.5s 1s linear;		/* qisqacha berish */
+	/* transition: property, duration, delay, timing-functoin; */
+
+
+					/* o'lchov turlari */
+	/* 1em - o'zinig otasining font-sizeiga teng qiymatni oladi */
+	/* 1rem - htmlning font-sizeiga teng qiymatni oladi */
+		
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 85%;
+    margin: 0px auto;
+    position: relative;
+}
+
+.left{
+    float: left;
+}
+
+.center{
+    margin: 0px auto;
+}
+
+.right{
+    float:right;
+}
+
+.clr{
+    clear: both;
+}
+
+.col-1{ width: 8.33%; }
+.col-2{ width: 16.6%; }
+.col-3{ width: 24.9%; }
+.col-4{ width: 33.33%;}
+.col-5{ width: 41.66%;}
+.col-6{ width: 49.99%;}
+.col-7{ width: 58.3%; }
+.col-8{ width: 66.6%; }
+.col-9{ width: 74.9%; }
+.col-10{ width: 83.3%;}
+.col-11{ width: 91.66%;}
+.col-12{ width: 100%; }
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-10,
+.col-12{
+    float: left;
+}
+
+
+
+*{
+	width: 50vw;		/* bizga ko'rinib turgan widthga nisbatan foiz oladi */ 
+	height: 50vh;		/* bizga ko'rinib turgan heightga nisbatan foiz oladi */ 
+
+	width: 50vmin;		/* browserning eni va bo'yidan qaysi biri kichik bolsa o'shanga nisbatan foiz oladi */ 
+	width: 50vmax;		/* browserning eni va bo'yidan qaysi biri katta bolsa o'shanga nisbatan foiz oladi */ 
+}
