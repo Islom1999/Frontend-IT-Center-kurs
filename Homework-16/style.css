@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.clr{
+  clear: both;
+}
+.bg {
+  background-image: url(./car-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0%;
+}
+.car1 {
+  width: 250px;
+  height: auto;
+  position: relative;
+  top: 80vh;
+  left: -850px;
+  animation: carAnimation1 4s 1s infinite ease;
+}
+@keyframes carAnimation1 {
+  from {
+    left: -850px;
+  }
+  to {
+    left: 110vw;
+  }
+}
+.car2 {
+  width: 250px;
+  height: auto;
+  position: relative;
+  top: 80vh;
+  left: -850px;
+  animation: carAnimation2 4s 2s infinite ease-in-out;
+}
+@keyframes carAnimation2 {
+  from {
+    left: -850px;
+  }
+  to {
+    left: 110vw;
+  }
+}
+
+.car3 {
+  width: 250px;
+  height: auto;
+  position: relative;
+  top: 80vh;
+  left: -850px;
+  animation: carAnimation3 7s 3s infinite ease-in;
+}
+@keyframes carAnimation3 {
+  from {
+    left: -850px;
+  }
+  to {
+    left: 110vw;
+  }
+}
+
+.text{
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  color: rgb(228, 18, 228);
+  text-shadow: 5px 5px 10px #333;
+  animation-name: textAnimation;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes textAnimation {
+  0% {
+    top: -10%;
+    opacity: 0;
+    transform: translateX(-50%) rotateY(0deg);
+
+  }
+  50% {
+    top: 20%;
+    opacity: 1;
+    transform: translateX(-50%) rotateY(0deg);
+  }
+  75% {
+    top: 20%;
+    opacity: 1;
+    transform: translateX(-50%) rotateY(0deg) ;
+  }
+  100%{
+    transform: translateX(-50%) rotateY(360deg);
+    top: 20%;
+    opacity: 0;
+  }
+}
+
+.rain-box{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.rain1{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -150%;
+  animation-name: rain1;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.rain2{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -150%;
+  animation-name: rain2;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes rain1 {
+  from{
+    top: -100%;
+  }
+  to{
+    top: 100%;
+  }
+}
+@keyframes rain2 {
+  from{
+    top: -100%;
+  }
+  to{
+    top: 100%;
+  }
+}
